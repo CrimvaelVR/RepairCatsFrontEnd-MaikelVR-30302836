@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@1,300;1,400&display=swap');
+
+
+/* Contenido referente a asignación de CSS, primeramente tenemos una selección total
+donde ajuste margenes, el color de fondo de la pagina, el tamaño de las letras, entre otros*/
+
+
+*{
+    box-sizing:  border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18px
+}
+
+body{
+    background-color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Aquí empece a establecer el CSS del Header, configure el color de fondo que tendría, su display como flex, alinee los objetos de forma centrada, les establecí un margen de separación
+y modifique el tamaño que tendría el header, asi como algunos detalles mas como: logo, fuente, animaciones, entre otros  */
+
+.header{
+    background-color: #00008B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10%;
+    height: 80px;
+}
+
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    transition: all 0.2s;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+
+.header .Red-Nav{
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+}
+
+.header .Red-Nav li{
+    display: inline-block;
+    margin: 0 18px;
+    transition: all 0.2s;
+}
+
+.header .Red-Nav a{
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header .Red-Nav li a:hover {
+    color: red;
+}
+
+.header .Red-Nav li:hover{
+    transform: scale(1.2);
+}
+
+/* Contáctanos*/
+
+.banner {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, red, darkblue);
+    background-size: 200% 200%;
+    animation: gradient 3s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.banner-content {
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+}
+
+.banner-content h1 {
+	font-size: 5rem;
+    margin-bottom: 10px;
+}
+
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("/assets/img/contactanos.webp");
+    background-size: cover;
+}
+
+  
+.form-box, .company-box {
+    width: 45%;
+    padding: 30px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin: 20px;
+}
+
+  
+.form-box {
+    width: 50%;
+}
+
+  
+.form-box h2, .company-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+  
+.form-box label {
+    font-weight: bold;
+}
+  
+.form-box input, .form-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+  
+.form-box button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+.form-box button[type="submit"]:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.company-box p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.company-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.company-box li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+  
+.company-box i {
+    margin-right: 10px;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+/*Mensaje al enviar*/
+
+#Emergente {
+    color: blue;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1.2rem;
+}
+
+/* Footer de la Pagina*/
+
+footer{
+    position:relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    padding-top: 40px;
+    color: white;
+    width: 100%;
+    height: auto;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.contenido-footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.contenido-footer h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.contenido-footer p{
+    max-width: auto;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #fff
+}
+
+.sociales{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+
+}
+
+.sociales li{
+    margin:  0 20px;
+}
+
+.sociales li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    transition: all 1.2s;
+}
+
+.sociales li a:hover{
+    transform: scale(1.2);
+    color: red;
+}
+

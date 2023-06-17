@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Repair Cat - Contacto</title>
+    <link rel="shortcut icon" href="/assets/img/REPAIRCATS.png" />
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- Esta parte es la cabecera/header -->
+    <header class="header">
+        <img src="/assets/img/REPAIRCATS.png" alt="Logo de la tienda" class="logo">
+        <div>
+            <nav>
+                <ul class = "Red-Nav">
+                    <li><a href="http://localhost:3000/api/Inicio">Inicio</a></li> 
+                    <li><a href="http://localhost:3000/api/galeria">Productos</a></li>
+                    <li><a href="http://localhost:3000/api/somos">¿Quienes Somos?</a></li>
+                    <li><a href="http://localhost:3000/api/contacto">Contacto</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Banner de Contacto-->
+
+    <section class="banner">
+		<div class="banner-content">
+			<h1>Contáctanos</h1>
+		</div>
+	</section>
+
+
+    <!-- Esta parte es el formulario de contacto -->
+
+    <section class="container-form">
+        <div class="form-box">
+            <h2>Formulario de contacto</h2>
+            <form action="" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="Nombre_Persona" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="Correo" required>
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="Telefono" required pattern="[0-9]+" title="Ingrese solo números">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="Mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+                <p id="Emergente"> <%= Agregado %> </p>
+            </form>
+        </div>
+
+
+        <!-- Esta parte son los datos de la empresa -->
+
+        
+        <div class="company-box">
+            <h2>Datos de la compañía</h2>
+            <ul>
+                <li><i class="fa fa-building-o"></i> Nombre de la compañía: Repair Cats.</li>
+                <li><i class="fa fa-map-marker"></i> Dirección: Mi Calle Principal, La Hoyada, Estado Trujillo</li>
+                <li><i class="fa fa-phone"></i> Teléfono: (123) 456-7890</li>
+                <li><i class="fa fa-envelope"></i> Correo electrónico: info@loremipsum.com</li>
+            </ul>
+    </section>
+
+
+    
+    <!-- Esta parte es el footer de la pagina -->
+    <footer>
+        <div class="contenido-footer">
+            <h3>Repair Cats</h3>
+            <p>Tienda online reconocida internacionalmente</p>
+        </div>
+        <!-- Iconos de Redes Sociales -->
+        <ul class="sociales">
+            <li><a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
+            <li><a href="https://www.instagram.com/crimshosho/" class="fa fa-instagram"></a></li>
+            <li><a href="https://www.twitter.com" class="fa fa-twitter"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCAhV1JKN_SPmoVkFBlDuoRw" class="fa fa-youtube"></a></li>
+        </ul>
+    </footer>
+
+
+    <!-- Esta parte son scripts de la pagina -->
+
+    <script>
+        setTimeout(function() { $('#Emergente').fadeOut('fast'); }, 2000);
+    </script>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>
